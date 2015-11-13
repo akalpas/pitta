@@ -1,4 +1,4 @@
-# Pitta [![Build Status](https://travis-ci.org/akalpas/pitta.svg?branch=master)](https://travis-ci.org/akalpas/pitta)
+# Pitta [![Build Status](https://travis-ci.org/akalpas/pitta.svg?branch=master)](https://travis-ci.org/akalpas/pitta) [![](https://codecov.io/github/akalpas/pitta/coverage.svg?branch=master)](https://codecov.io/github/akalpas/pitta?branch=master)
 
 proof-of-concept of aggregated local agenda
 
