@@ -11,4 +11,4 @@ proof-of-concept of aggregated local agenda
 
 * run `mvnw spring-boot:run`
 
-application will run on http://localhost:8080/
+application will run on [http://localhost:8080/](http://localhost:8080/)
