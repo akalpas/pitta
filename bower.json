@@ -1,0 +1,11 @@
+{
+  "name": "kalpas",
+  "version": "0.0.1-SNAPSHOT",
+  "appPath": "src/main/webapp",
+  "testPath": "src/test/javascript/spec",
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "jquery": "2.1.4"
+  },
+  "devDependencies": {}
+}

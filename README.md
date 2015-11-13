@@ -1,6 +1,14 @@
 # Pitta
+
 proof-of-concept of aggregated local agenda
 
 # Build
 
-run mvnw install
+* run `bower install`
+* run `mvnw package` (or use `mvn` if you have maven installed locally)
+
+# Run
+
+* run `mvnw spring-boot:run`
+
+application will run on http://localhost:8080/
