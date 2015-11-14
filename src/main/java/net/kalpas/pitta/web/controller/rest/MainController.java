@@ -1,4 +1,4 @@
-package io.pitta.web.controller.rest;
+package net.kalpas.pitta.web.controller.rest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

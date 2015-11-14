@@ -1,4 +1,4 @@
-package io.pitta;
+package net.kalpas.pitta;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
