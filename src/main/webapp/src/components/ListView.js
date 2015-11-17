@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import WebAPIUtils from '../utils/WebAPIUtils';
-import './list.css';
+import './style.sass'
 
 export default class ListView extends Component {
 

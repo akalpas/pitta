@@ -28,6 +28,9 @@ module.exports = {
       },{
         test: /\.png$/,
         loader: 'file-loader'
+      },{
+        test: /\.sass$/,
+        loader: ExtractTextPlugin.extract('css!sass')
       }]
   },
   resolve: {
@@ -45,6 +48,6 @@ module.exports = {
       'process.env': JSON.stringify('development')
     }),
   new webpack.ContextReplacementPlugin(/node_modules\/moment\/locale/, /ru|en-gb/),
-  new ExtractTextPlugin('style.css', {allChunks: true})
+  new ExtractTextPlugin('css/style.css', {allChunks: true})
   ],
 };
