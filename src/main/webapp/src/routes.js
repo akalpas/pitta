@@ -1,16 +1,16 @@
 import React from 'react';
 import { Route } from 'react-router';
-import App from './containers/App';
 import * as containers from './containers';
 
 
 const {
-  List
+	App,
+  	EventsList
 } = containers;
 
 
 export default (
-  <Route component={App}>
-    <Route path="/" component={List} />
+  <Route name='app' component={App}>
+    <Route name='events' path="/" component={EventsList} />
   </Route>
 );

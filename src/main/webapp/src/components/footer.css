@@ -1,0 +1,15 @@
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: auto;
+	padding: 10px;
+	background-color: #00695C;
+	vertical-align:middle;
+}
+
+.footer h5 {
+	text-align: center;
+	color: #ffffff;
+}

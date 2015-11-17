@@ -1,24 +1,34 @@
 import React, { Component, PropTypes } from 'react';
-
+import WebAPIUtils from '../utils/WebAPIUtils';
+import ListView from './ListView'
+import Header from './Header'
+import Footer from './Footer'
+import './main.css'
 
 export default class Main extends Component {
 
   static propTypes = {
-    children: PropTypes.any.isRequired
+    loading: PropTypes.bool.isRequired
+  }
+
+  componentWillMount() {
+    this.props.loadingStart();
+    WebAPIUtils.getEvents(
+      (events)=>{this.props.receiveEvents(events)},
+      (error)=>{this.props.loadingFailed(error)}
+    );
   }
 
   render() {
-    return (
-      <div className="container">
-        <div className="jumbotron">
-            <h1>Hello from Pitta</h1>
+    let { events } = this.props;
 
-            <p>We don't have really much to show for now.</p>
-            <p>but in the meantime you can can share your ideas and feedback with us</p>
-            <p>
-                <a class="btn btn-primary btn-lg" href="http://goo.gl/forms/1BuUBkr6dQ">Share your ideas »</a>
-            </p>
+    return (
+      <div className="wrapper">
+        <Header />
+        <div className="wrapper-content">
+          <ListView {...this.props} />
         </div>
+        <Footer />
       </div>
     );
   }

@@ -55,7 +55,13 @@
     "sinon": "^1.17.1",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.4.1"
+    "webpack-hot-middleware": "^2.4.1",
+    "css-loader": "~0.23.0",
+    "style-loader": "~0.13.0",
+    "sass-loader": "~3.1.1",
+    "node-sass": "~3.4.2",
+    "file-loader": "~0.8.4",
+    "extract-text-webpack-plugin": "~0.9.1"
   },
   "dependencies": {
     "history": "^1.13.0",
@@ -66,6 +72,9 @@
     "redux": "^3.0.2",
     "redux-logger": "^2.0.3",
     "redux-promise": "^0.5.0",
-    "redux-thunk": "^1.0.0"
+    "redux-thunk": "^1.0.0",
+    "style-loader": "~0.13.0",
+    "moment": "~2.10.6",
+    "superagent": "~1.4.0"
   }
 }
